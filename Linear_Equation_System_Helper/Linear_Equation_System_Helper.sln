@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Linear_Equation_System_Helper", "Linear_Equation_System_Helper\Linear_Equation_System_Helper.pyproj", "{7A036DB7-94FC-4811-9FA8-DB48A055737F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A036DB7-94FC-4811-9FA8-DB48A055737F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A036DB7-94FC-4811-9FA8-DB48A055737F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D716484-A028-4144-A791-EA2456AEC7E3}
+	EndGlobalSection
+EndGlobal
