@@ -26,13 +26,19 @@ class equation():
 
 
 class equation_system():
-    def __init__(self, equations, nbr_of_unknown):
+    def __init__(self, equations, nbr_of_unknown, second_members):
         self.equations = equations
         self.nbr_of_unknown = nbr_of_unknown
         ...
 
     def __str__(self):
-        ...
+        system_text = ""
+        system_text += "---\n" #basic system layout
+        for eq in self.equations:
+            system_text+= str(eq) + "\n"
+
+        system_text += "---\n" #basic system layout
+        return system_text
 
     def swap_equations(self, index1, index2):
         self.equations[index1], self.equations[index2] = self.equations[index2], self.equations[index2]
