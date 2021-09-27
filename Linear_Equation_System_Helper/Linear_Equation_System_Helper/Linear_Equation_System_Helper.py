@@ -1,6 +1,6 @@
 
 
-class equation():
+class Equation():
     def __init__(self, factors, second_member):
         self.factors = factors
         self.second_member = second_member
@@ -12,7 +12,7 @@ class equation():
                 equation_text += str(self.factors[i]) + "x" + str(i+1)
             else :
                 equation_text += " + " + str(self.factors[i]) + "x" + str(i+1)
-        equation_text += " = " + self.second_member
+        equation_text += " = " + str(self.second_member)
 
         return equation_text
 
@@ -25,8 +25,8 @@ class equation():
             self.factors[factor] += other.factors[factor]*scaler
 
 
-class equation_system():
-    def __init__(self, equations, nbr_of_unknown, second_members):
+class Equation_system():
+    def __init__(self, equations, nbr_of_unknown):
         self.equations = equations
         self.nbr_of_unknown = nbr_of_unknown
         ...
@@ -45,7 +45,12 @@ class equation_system():
 
 
 def main():
-    ...
+    eq1 = Equation([1, 1, 2], 3)
+    print(eq1)
+    eq2 = Equation ([3, 0, 5], 7)
+
+    sys1 = Equation_system([eq1, eq2], 3)
+    print(sys1)
 
 if __name__ == "__main__":
     main()
