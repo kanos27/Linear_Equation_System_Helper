@@ -18,11 +18,18 @@ class Equation():
 
     def __mul__(self, scaler):
         for factor in range(len(self.factors)):
-            self.factors[factor]*= scaler
+            self.factors[factor] *= scaler
+        self.second_member *= scaler
 
     def __add__(self, other):
         for factor in range(len(self.factors)):
-            self.factors[factor] += other.factors[factor]*scaler
+            self.factors[factor] += other.factors[factor]
+        self.second_member += other.second_member
+
+    def __sub__(self,other):
+        for factor in range(len(self.factors)):
+            self.factors[factor] -= other.factors[factor]
+        self.second_member -= other.second_member
 
 
 class Equation_system():
@@ -50,6 +57,12 @@ def main():
     eq2 = Equation ([3, 0, 5], 7)
 
     sys1 = Equation_system([eq1, eq2], 3)
+    print(sys1)
+    sys1.equations[0]*2
+    print(sys1)
+    sys1.equations[0] - sys1.equations[1]
+    print(sys1)
+    sys1.equations[0] - sys1.equations[1]*2
     print(sys1)
 
 if __name__ == "__main__":
